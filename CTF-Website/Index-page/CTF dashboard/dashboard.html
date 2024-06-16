@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTFs Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="company-container">
+            <h1 class="company-name">Encryptia . . .</h1>
+        </div>
+    </header>
+    <div class="dashboard-container">
+        <div class="challenge-box" id="web-dev-challenges">
+            <img src="web_dev.jpg" alt="Web Development Challenges" class="challenge-image">
+            <h2 class="challenge-title">Web Development Challenges</h2>
+            <p class="challenge-description">Test your web development skills with these exciting challenges.</p>
+            <p class="students-solved" id="web-dev-solved">Students Solved: 0</p>
+            <button class="challenge-button" onclick="goToChallenges('web-dev')">Go to Challenges</button>
+        </div>
+        <div class="challenge-box" id="web-sec-challenges">
+            <img src="web_sec.jpg" alt="Web Security Challenges" class="challenge-image">
+            <h2 class="challenge-title">WebApp Security Challenges</h2>
+            <p class="challenge-description">Test your web security skills with these challenging tasks.</p>
+            <p class="students-solved" id="web-sec-solved">Students Solved: 0</p>
+            <button class="challenge-button" onclick="goToChallenges('web-sec')">Go to Challenges</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

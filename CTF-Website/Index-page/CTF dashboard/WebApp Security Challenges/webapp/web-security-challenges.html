@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Security Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Web Security Challenges</h1>
+        <div class="cards-container">
+            <!-- Repeating 9 cards for challenges -->
+            <div class="card" onclick="openDetails('challenge1')">
+                <img src="challenge1.jpg" alt="Challenge 1" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 1</h2>
+                    <p class="card-description">Brief description of Challenge 1</p>
+                    <p class="card-info">Level: Easy | Points: 10</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge2')">
+                <img src="challenge1.jpg" alt="Challenge 2" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 2</h2>
+                    <p class="card-description">Brief description of Challenge 2</p>
+                    <p class="card-info">Level: Medium | Points: 20</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge3')">
+                <img src="challenge1.jpg" alt="Challenge 3" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 3</h2>
+                    <p class="card-description">Brief description of Challenge 3</p>
+                    <p class="card-info">Level: Hard | Points: 30</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge4')">
+                <img src="challenge1.jpg" alt="Challenge 4" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 4</h2>
+                    <p class="card-description">Brief description of Challenge 4</p>
+                    <p class="card-info">Level: Easy | Points: 10</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge5')">
+                <img src="challenge1.jpg" alt="Challenge 5" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 5</h2>
+                    <p class="card-description">Brief description of Challenge 5</p>
+                    <p class="card-info">Level: Medium | Points: 20</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge6')">
+                <img src="challenge1.jpg" alt="Challenge 6" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 6</h2>
+                    <p class="card-description">Brief description of Challenge 6</p>
+                    <p class="card-info">Level: Hard | Points: 30</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge7')">
+                <img src="challenge1.jpg" alt="Challenge 7" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 7</h2>
+                    <p class="card-description">Brief description of Challenge 7</p>
+                    <p class="card-info">Level: Easy | Points: 10</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge8')">
+                <img src="challenge1.jpg" alt="Challenge 8" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 8</h2>
+                    <p class="card-description">Brief description of Challenge 8</p>
+                    <p class="card-info">Level: Medium | Points: 20</p>
+                </div>
+            </div>
+            <div class="card" onclick="openDetails('challenge9')">
+                <img src="challenge1.jpg" alt="Challenge 9" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Challenge 9</h2>
+                    <p class="card-description">Brief description of Challenge 9</p>
+                    <p class="card-info">Level: Hard | Points: 30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <h2 id="modal-title">Challenge Title</h2>
+            <p id="modal-description">Detailed description of the challenge.</p>
+            <p id="modal-info">Level: Difficulty | Points: X</p>
+            <input type="text" id="challengeInput" placeholder="Enter your answer here...">
+            <button class="submit-button" onclick="submitChallenge()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

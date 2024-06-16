@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Transparent Box Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="transparent-box slide" id="intro-slide">
+            <header class="box-header">Web Development Challenges</header>
+            <p class="box-content">
+                Dive into the dynamic world of web development with our Web Development Challenges at Encryptia CTF! 
+                Designed to test your skills in HTML, CSS, JavaScript, and beyond, these challenges will push you to build, debug, and optimize web applications under time constraints. 
+                Whether you're a front-end wizard or a back-end guru, you'll find a variety of tasks that cater to all levels of expertise. 
+                Unleash your creativity, enhance your problem-solving abilities, and showcase your coding prowess as you compete against peers in an electrifying environment. 
+                Ready to code your way to the top? Join us and prove your mettle in the Web Development Challenges!
+            </p>
+            <button class="challenge-button next-button" onclick="nextSlide()">Next</button>
+        </div>
+        <div class="transparent-box slide" id="rules-slide">
+            <header class="box-header">Game Rules & Regulations</header>
+            <p class="box-content">
+                1. Open to all individuals/teams registered via the Encryptia Security CTF <a href="../../../Registration/registration.html" class="clickable-word">registration</a> form.<br>
+                2. Teams of 1-5 members. Participants may join multiple teams but can only compete on one team at a time.<br>
+                3. Provide a unique team name during <a href="../../../Registration/registration.html" class="clickable-word">registration</a>.<br>
+                4. Solve challenges via the official platform. Unauthorized access to challenges is prohibited.<br>
+                5. Any form of cheating or hacking into other teams' systems results in disqualification.<br>
+                6. Points based on challenge difficulty. Highest score wins.<br>
+                7. Ties resolved by the shortest completion time.<br>
+                8. Prizes for top 1st team members. Details announced before the competition.<br>
+                9. Winners will be notified via email and announced on our website/social media.<br>
+                10. Compete at your own risk, agreeing to all terms and conditions.<br>
+                <br>
+                <input type="checkbox" id="agree-checkbox" class="checkbox">
+                <label for="agree-checkbox" class="checkbox-label">I agree to the  terms and conditions.</label>
+            </p>
+            <button class="challenge-button next-button" onclick="nextSlide()" id="next-button" disabled>Next</button>
+        </div>
+        <div class="transparent-box slide" id="challenges-slide">
+            <header class="box-header">Welcome to Challenges</header>
+            <p class="box-content">
+                Explore a variety of challenges to test your skills in web development and security. 
+                Click below to start your journey!
+            </p>
+            <button class="challenge-button" onclick="goToChallenges()">Go to Challenges</button>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <p>© 2024 Encryptia. All rights reserved.</p>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>

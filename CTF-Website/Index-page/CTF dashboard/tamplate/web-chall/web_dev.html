@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="company-container">
+            <h1 class="company-name">Encryptia . . .</h1>
+        </div>
+    </header>
+
+    <!-- Challenges Container -->
+    <div class="challenges-wrapper">
+        <div class="challenge-container" id="challenge-1">
+            <div class="challenge-box">
+                <h2 class="challenge-title">Challenge 1: Build a Responsive Layout</h2>
+                <p class="challenge-description">Create a responsive webpage layout using HTML and CSS. The layout should adapt to different screen sizes.</p>
+                <p class="challenge-timer" id="timer-1">Time Left: 06:00:00</p>
+                <input type="text" id="challenge-answer-1" class="challenge-input" placeholder="Enter your answer here...">
+                <button class="challenge-button" onclick="submitChallenge(1)">Submit</button>
+            </div>
+        </div>
+        <div class="challenge-container" id="challenge-2">
+            <div class="challenge-box">
+                <h2 class="challenge-title">Challenge 2: JavaScript Interactivity</h2>
+                <p class="challenge-description">Add JavaScript to make the page interactive, such as showing a modal on button click.</p>
+                <p class="challenge-timer" id="timer-2">Time Left: 06:00:00</p>
+                <input type="text" id="challenge-answer-2" class="challenge-input" placeholder="Enter your answer here...">
+                <button class="challenge-button" onclick="submitChallenge(2)">Submit</button>
+            </div>
+        </div>
+        <div class="challenge-container" id="challenge-3">
+            <div class="challenge-box">
+                <h2 class="challenge-title">Challenge 3: Form Validation</h2>
+                <p class="challenge-description">Implement form validation using JavaScript. The form should check for valid input before submission.</p>
+                <p class="challenge-timer" id="timer-3">Time Left: 06:00:00</p>
+                <input type="text" id="challenge-answer-3" class="challenge-input" placeholder="Enter your answer here...">
+                <button class="challenge-button" onclick="submitChallenge(3)">Submit</button>
+            </div>
+        </div>
+        <div class="challenge-container" id="challenge-4">
+            <div class="challenge-box">
+                <h2 class="challenge-title">Challenge 4: Final Project</h2>
+                <p class="challenge-description">Create a final project combining all the skills you have learned in the previous challenges.</p>
+                <p class="challenge-timer" id="timer-4">Time Left: 06:00:00</p>
+                <input type="text" id="challenge-answer-4" class="challenge-input" placeholder="Enter your answer here...">
+                <button class="challenge-button" onclick="submitChallenge(4)">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
